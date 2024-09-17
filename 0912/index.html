@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="lt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Promise - Marijus Šmiginas" />
+    <title>Dance Registration</title>
+    <link rel="stylesheet" href="assets/styles/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="container__h1">Dance Registration</h1>
+      <p class="container__p">
+        Fill the registration form below keenly to enter the dancing
+        competition.
+      </p>
+      <form class="regform">
+        <table class="regtable">
+          <tr class="regtable__tr">
+            <td class="regtable__info">Name</td>
+            <td>
+              <input type="text" id="first_name" name="first_name" />
+              <legend class="regtable__legend">First Name</legend>
+            </td>
+            <td>
+              <input type="text" id="last_name" name="last_name" />
+              <legend class="regtable__legend">Last Name</legend>
+            </td>
+          </tr>
+          <tr class="regtable__tr">
+            <td class="regtable__info">E-mail</td>
+            <td colspan="2">
+              <input type="text" id="email" name="email" style="width: 100%" />
+              <legend class="regtable__legend">example@example.com</legend>
+            </td>
+          </tr>
+          <tr class="regtable__tr">
+            <td class="regtable__info">Phone Number</td>
+            <td colspan="2">
+              <div style="display: flex">
+                <div>
+                  <input
+                    type="text"
+                    id="code"
+                    name="code"
+                    maxlength="4"
+                    size="4"
+                  />
+                  <legend class="regtable__legend">Ara Code</legend>
+                </div>
+                &nbsp;-&nbsp;
+                <div>
+                  <input
+                    type="text"
+                    id="phone"
+                    name="phone"
+                    maxlength="8"
+                    size="8"
+                  />
+                  <legend class="regtable__legend">Phone</legend>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr class="regtable__tr">
+            <td class="regtable__info">Gender</td>
+            <td colspan="2">
+              <div style="display: flex; justify-content: space-between">
+                <div>
+                  <input type="radio" id="gneder_male" name="gender_male" />
+                  <label for="gender_male">Male</label>
+                </div>
+                <div>
+                  <input type="radio" id="gneder_female" name="gneder_female" />
+                  <label for="gneder_female">Female</label>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="regtable__info">Address</td>
+            <td colspan="2">
+              <input
+                type="text"
+                id="address"
+                name="address"
+                style="width: 100%"
+              />
+              <legend class="regtable__legend">Streat Address</legend>
+            </td>
+          </tr>
+          <tr>
+            <td class="regtable__info"></td>
+            <td colspan="2">
+              <p>
+                <input
+                  type="text"
+                  id="address2"
+                  name="address2"
+                  style="width: 100%"
+                />
+                <legend class="regtable__legend">Streat Address Line2</legend>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="regtable__info"></td>
+            <td>
+              <input type="text" id="city" name="city" />
+              <legend class="regtable__legend">City</legend>
+            </td>
+            <td>
+              <input type="text" id="province" name="province" />
+              <legend class="regtable__legend">State / Province</legend>
+            </td>
+          </tr>
+          <tr>
+            <td class="regtable__info"></td>
+            <td colspan="2">
+              <input type="text" id="zip" name="zip" />
+              <legend class="regtable__legend">Postal / Zip Code</legend>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </main>
+  </body>
+</html>

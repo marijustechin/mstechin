@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap");
+
+:root * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "SUSE", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.main {
+  width: 100%;
+  max-width: 1256px;
+  margin: 0 auto;
+}
+
+.main__h1 {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.card {
+  padding: 20px;
+  text-align: center;
+  border: 1px solid grey;
+  border-radius: 35px;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.card__figure {
+  margin: 0 auto;
+}
+
+.card__image {
+  width: 100%;
+  overflow: hidden;
+}
+
+.card__btn {
+  background-color: transparent;
+  padding: 10px;
+  font-size: 26px;
+  margin: 10px auto;
+  border-radius: 25px;
+}
+
+.card__ul {
+  list-style: none;
+}
+
+.checked {
+  color: #e7e700;
+}
