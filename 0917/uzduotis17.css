@@ -18,8 +18,14 @@ body {
   font-style: normal;
 }
 
+h1,
+h2 {
+  color: var(--white-color);
+}
+
 .navbar {
-  position: sticky;
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
   padding: 0 1rem;
@@ -38,7 +44,50 @@ body {
   }
 }
 
-.footer{
-    background-color: var(--gray-color);
-    color: var(--white-color);
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section.about {
+  width: 100%;
+  height: 100vh;
+
+  background-color: var(--gray-dark-color);
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 2rem;
+    color: var(--red-color);
+  }
+}
+
+.section.work {
+  padding: 3rem 1rem;
+  background-color: var(--blue-color);
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+
+  img {
+    width: 30%;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem 1rem;
+  border-top: 5px solid var(--red-color);
+  background-color: var(--gray-light-color);
+  color: var(--white-color);
 }
