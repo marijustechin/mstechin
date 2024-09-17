@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+:root * {
+  padding: 0;
+  margin: 0;
+  /* padding ir margin iskaiciuojami i pasirinkta objektu ploti/auksti */
+  box-sizing: border-box;
+
+  --color-white: #fff;
+  --color-rose-50: #fff7fb;
+  --color-rose-800: #7a284e;
+  --color-brown-800: #854632;
+  --color-stone-100: #f3e5d7;
+  --color-stone-150: #e3ddd7;
+  --color-stone-600: #5f564d;
+  --color-stone-900: #312e2c;
+  --spacing-100: 8px;
+  --spacing-150: 12px;
+  --spacing-200: 16px;
+  --spacing-300: 24px;
+  --spacing-500: 40px;
+  --spacing-600: 48px;
+  --spacing-1600: 128px;
+  --font-size-desktop-text-preset-1: 40px;
+  --font-size-desktop-text-preset-2: 28px;
+  --font-size-desktop-text-preset-3: 20px;
+  --font-size-desktop-text-preset-4: 16px;
+}
+
+body {
+  font-family: "Young Serif", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  display: flex;
+  width: 1440px;
+  margin: 0 auto;
+  padding: var(--spacing-1600) var(--spacing-600);
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-100);
+  background: var(--color-stone-100);
+}
+
+.recipe {
+  display: flex;
+  width: 736px;
+  padding: var(--spacing-500);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-500);
+  border-radius: var(--spacing-300);
+  background-color: var(--color-white);
+}
+
+.recipe img {
+  height: 300px;
+  align-self: stretch;
+  border-radius: var(--spacing-150);
+}

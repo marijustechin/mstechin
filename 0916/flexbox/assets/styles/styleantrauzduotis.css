@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap");
+
+:root * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "SUSE", sans-serif;
+  font-optical-sizing: auto;
+}
+
+h1 {
+  text-decoration: underline;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.container {
+  max-width: 1256px;
+  margin: 0 auto;
+  display: flex;
+  padding: 0 1rem;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.container__sec {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.sec__title {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sec__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+}
+
+.sec__items div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 23%;
+  height: 15em;
+}
+
+.sec__items img {
+  width: 100%;
+  height: auto;
+}
+
+.items__cyan {
+  background-color: rgb(120, 255, 255);
+}
+
+.items__orange {
+  background-color: rgb(252, 195, 90);
+}
+
+.items__blue {
+  background-color: #60a0e9;
+}
+
+.items__green {
+  background-color: #6feb6f;
+}
+
+i.fa {
+  color: #fff;
+  font-size: 5em;
+}
