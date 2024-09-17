@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="lt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Promise - Marijus Šmiginas" />
+    <title>HTML sąrašai</title>
+    <link rel="stylesheet" href="assets/styles/sarasai_style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <h1 class="main__h1">HTML sąrašai</h1>
+      <section class="main__section">
+        <h2 class="main__h2">Numeruotas sąrašas 1</h2>
+        <ol class="ordered-list simple">
+          <li>Elementas 1</li>
+          <li>Elementas 2</li>
+          <li>Elementas 3</li>
+        </ol>
+      </section>
+      <section class="main__section">
+        <h2 class="main__h2">Numeruotas sąrašas 2</h2>
+        <ol type="I" class="ordered-list multilevel">
+          <li>Elementas 1</li>
+          <li>
+            Elementas 2
+            <ol type="a" class="ordered-list child">
+              <li>Lorem, ipsum dolor.</li>
+              <li>Lorem, ipsum dolor.</li>
+            </ol>
+          </li>
+          <li>
+            Elementas 3
+            <ol type="a" class="ordered-list child">
+              <li>Lorem, ipsum dolor.</li>
+            </ol>
+          </li>
+        </ol>
+      </section>
+      <section class="main__section">
+        <h2 class="main__h2">Aprašymo sąrašas</h2>
+        <dl class="description-list">
+          <dt>Elementas 1</dt>
+          <dd>Elemento 1 aprašymas</dd>
+          <dt>Elementas 2</dt>
+          <dd>Elemento 2 aprašymas</dd>
+          <dt>Elementas 3</dt>
+          <dd>Elemento 3 aprašymas</dd>
+        </dl>
+      </section>
+      <section class="main__section">
+        <h2 class="main__h2">Sąrašas su išvardijimo simboliu</h2>
+        <ul>
+          <li style="list-style: square">Elementas 1</li>
+          <li style="list-style: circle">Elementas 2</li>
+          <li>Elementas 3</li>
+        </ul>
+      </section>
+      <section class="main__section">
+        <h2 class="main__h2">Sąrašas su paveikslėliu</h2>
+        <ul class="custom-image-list">
+          <li>Elementas 1</li>
+          <li>Elementas 2</li>
+          <li>Elementas 3</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
