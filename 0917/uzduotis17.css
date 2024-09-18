@@ -12,6 +12,10 @@
   --white-color: #f0f0f0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Raleway", sans-serif;
 }
@@ -31,6 +35,7 @@ h2 {
   display: flex;
   justify-content: flex-end;
   padding: 0 1rem;
+  box-shadow: 0 5px 5px -5px #000;
   background-color: var(--red-color);
 
   a {
@@ -66,6 +71,7 @@ h2 {
   p {
     font-size: 2rem;
     color: var(--red-color);
+    font-style: italic;
   }
 }
 
@@ -93,19 +99,47 @@ h2 {
         width: 100%;
       }
 
-      div {
+      .item__title {
         background-color: var(--gray-light-color);
         color: var(--white-color);
-
         text-align: center;
         padding: 1rem;
         display: block;
         font-size: large;
+        
       }
 
-      .portfolio__item:hover div > p {
-        color: red;
+      &:hover .item__title::after {
+      
+        content: " />";
       }
+
+      &:hover .item__title::before {
+        content: "< ";
+      }
+    }
+
+    .item__title::after,
+    .item__title::before {
+      color: orange;
+    }
+  }
+
+  .btn {
+    background-color: var(--gray-dark-color);
+    color: var(--white-color);
+    border: none;
+    padding: 0.8rem;
+    font-size: large;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .btn:hover {
+    background-color: var(--red-color);
+    i {
+      transition: 0.3s;
+      padding-left: 6px;
     }
   }
 }
