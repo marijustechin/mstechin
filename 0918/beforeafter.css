@@ -1,37 +1,19 @@
+:root * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .container {
-  width: 800px;
+  max-width: 800px;
   margin: 0 auto;
 
-  .a__top {
-    width: 200px;
-    height: 200px;
+  img {
+    mix-blend-mode: multiply;
+  }
+
+  img::after {
+    content: url(img/beforeafter.jpeg);
     border: 1px solid #000;
-  }
-
-  .a__bottom::after {
-    content: " >>";
-  }
-
-  .a__top::before {
-    content: "<< ";
-  }
-
-  .a__top:hover::before {
-    content: " >>";
-  }
-
-  .a__top:hover .a__bottom::after {
-    content: "pliusas";
-  }
-
-  a {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  a:hover .a__bottom::before {
-    content: "<< ";
   }
 }
