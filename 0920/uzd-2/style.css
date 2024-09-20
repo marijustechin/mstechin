@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+:root * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  --color-white: #fcfcfc;
+  --color-light-gray: #dadada;
+  --color-dark-gray: #707070;
+  --color-light-blue: #1792d2;
+  --color-dark-blue: #143774;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  color: var(--color-dark-blue);
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3,
+h4 {
+  text-align: left;
+  color: var(--color-light-blue);
+  padding: 1rem 0;
+}
+
+p {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.125rem;
+  color: var(--color-dark-gray);
+
+  span {
+    font-weight: 600;
+  }
+}
+
+.container {
+  .subheading,
+  .read-more {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--color-light-blue);
+    text-transform: uppercase;
+  }
+  .subheading {
+    font-size: 0.75rem;
+  }
+
+  .date {
+    font-size: 0.875rem;
+  }
+
+  .read-more {
+    font-size: 0.875rem;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-light-gray);
+    padding: 2rem 0;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 2rem 1rem;
+    }
+
+    .header__title {
+      text-align: center;
+    }
+
+    .header__nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+
+      @media screen and (min-width: 768px) {
+        flex-direction: row;
+        gap: 1rem;
+      }
+
+      a {
+        text-decoration: none;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: var(--color-dark-gray);
+        padding: 0.5rem 0;
+
+        @media screen and (min-width: 768px) {
+          padding: 0.5rem 1rem;
+        }
+
+        &.current {
+          text-decoration: underline;
+        }
+
+        &:hover {
+          background-color: var(--color-dark-gray);
+          color: var(--color-light-gray);
+        }
+      }
+    }
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+    .main__wrapper {
+        display: flex;
+        flex-direction: column;
+
+        @media  screen and (min-width: 768px) {
+            flex-direction: row;
+        }
+      .main__article {
+        p {
+          padding: 0.5rem 0;
+        }
+      }
+
+      .main__sidebar {
+        background-color: var(--color-light-gray);
+        padding: 1rem;
+        margin: 2rem 0;
+
+        .sidebar__wrapper {
+          background-color: var(--color-white);
+          padding: 1rem;
+
+          .subheading {
+            padding-bottom: 1rem;
+          }
+
+          .wrapper__item {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            border-bottom: 1px solid var(--color-light-gray);
+            margin-bottom: 1rem;
+
+            &:last-child {
+              border-bottom: none;
+            }
+
+            .item__img-food {
+              height: 70px;
+              background-image: url(img/food.jpg);
+              background-position: center;
+              background-size: 100%;
+            }
+
+            .item__img-deko {
+              height: 70px;
+              background-image: url(img/deco.jpg);
+              background-position: center;
+              background-size: 100%;
+            }
+
+            .item__img-work {
+              height: 70px;
+              background-image: url(img/work.jpg);
+              background-position: center;
+              background-size: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    img {
+      width: 100%;
+      padding: 1rem;
+    }
+  }
+
+  .footer {
+    background-color: var(--color-dark-blue);
+
+    padding: 3rem 0;
+
+    p {
+      text-align: center;
+      font-family: "Ubuntu", sans-serif;
+      font-weight: 300;
+      font-size: 1rem;
+      color: var(--color-white);
+    }
+  }
+}

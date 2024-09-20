@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
+
+:root * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kalam", cursive;
+}
+
+.container {
+  max-width: 1440px;
+  margin-inline: auto;
+
+  .header {
+    img {
+      width: 100%;
+    }
+
+    .header__logo {
+      max-width: 200px;
+    }
+
+    .header__nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #987d9a;
+
+      a {
+        text-decoration: none;
+        color: #fefbd8;
+
+        width: 100%;
+        text-align: center;
+        padding: 0.3rem 0;
+        border-bottom: 1px solid #401d42;
+
+        &:hover {
+          background-color: #401d42;
+        }
+
+        &:last-child {
+          border: none;
+        }
+
+        .current {
+          background-color: #401d42;
+        }
+      }
+    }
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      text-align: center;
+      color: #86178b;
+      padding: 1.5rem;
+      font-size: 2rem;
+    }
+
+    .main__card-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+
+      .main__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        border: 1px solid #eeceb9;
+        /* place-self: center; */
+        max-width: 320px;
+
+        .card__img {
+          position: relative;
+          width: 100%;
+
+          img {
+            border-radius: inherit;
+            padding: 0.3rem;
+            width: 100%;
+          }
+
+          .img__name {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: hsla(296, 13%, 55%, 0.301);
+            padding: 0.3rem;
+            border-radius: 5px;
+
+            color: #401d42;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    margin-top: 1rem;
+    text-align: center;
+    background-color: #987d9a;
+    color: #fefbd8;
+    padding: 0.5rem;
+    font-size: small;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    .header {
+      .header__nav {
+        flex-direction: row;
+        justify-content: center;
+
+        a {
+          border-right: 1px solid #401d42;
+          border-bottom: none;
+          width: fit-content;
+          padding: 0.3rem 1rem;
+        }
+      }
+    }
+  }
+}
