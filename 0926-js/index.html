@@ -9,6 +9,82 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    
+    <main class="container p-10 mx-auto">
+      <section class="wrapper grid grid-cols-2 gap-10">
+        <div class="form">
+          <form class="max-w-sm mx-auto">
+            <div class="mb-5">
+              <fieldset class="border border-blue-600 p-2 shadow-md">
+                <legend class="px-3">Kažkokie duomenys</legend>
+                <div class="mb-5">
+                  <label
+                    for="userName"
+                    class="block mb-2 text-sm font-medium text-gray-900"
+                    >Vardas</label
+                  >
+                  <input
+                    type="text"
+                    id="userName"
+                    class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                    placeholder="Jūsų vardas"
+                    required
+                  />
+                </div>
+                <div class="mb-5">
+                  <label
+                    for="userEmail"
+                    class="block mb-2 text-sm font-medium text-gray-900"
+                    >El. paštas</label
+                  >
+                  <input
+                    type="email"
+                    id="userEmail"
+                    class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                    placeholder="Jūsų el. pašto adresas"
+                    required
+                  />
+                </div>
+
+                <div class="flex items-start mb-5">
+                  <div class="flex items-center h-5">
+                    <input
+                      id="terms"
+                      type="checkbox"
+                      value="Ne"
+                      class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
+                    />
+                  </div>
+                  <label
+                    for="terms"
+                    class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    >Sutinku, kad mano duomenis apdorotų skriptas
+                  </label>
+                </div>
+                <button
+                  type="reset"
+                  class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                >
+                  Iš naujo
+                </button>
+                <button
+                  type="submit"
+                  id="submitButton"
+                  class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                >
+                  Rodyti
+                </button>
+              </fieldset>
+            </div>
+          </form>
+        </div>
+        <div class="datacard">
+          <p>Vardas: <span class="font-semibold" id="name"></span></p>
+          <p>El. paštas: <span class="font-semibold" id="email"></span></p>
+          <p>Sutinka? <span class="font-semibold" id="agreement"></span></p>
+        </div>
+      </section>
+    </main>
+
+    <div class="p-10" id="result"></div>
   </body>
 </html>
